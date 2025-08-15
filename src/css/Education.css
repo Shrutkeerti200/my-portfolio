@@ -1,0 +1,41 @@
+.education-card {
+  border-radius: 12px;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #eee;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(108, 99, 255, 0.1);
+}
+
+.university-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  margin-right: 6px;
+}
+
+.coursework-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tag {
+  background-color: #f0eefe;
+  color: #6c63ff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tag:hover {
+  background-color: #e3dfff;
+  transform: scale(1.05);
+}

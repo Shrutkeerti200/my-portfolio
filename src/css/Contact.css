@@ -1,0 +1,21 @@
+.icon-link {
+  color: #8b5cf6;
+  transition: transform 0.2s ease;
+}
+
+.icon-link:hover {
+  transform: scale(1.2);
+  color: #6c63ff;
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

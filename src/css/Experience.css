@@ -1,0 +1,29 @@
+.experience-card {
+  border-radius: 12px;
+  background-color: #f8f9fa;
+  transition: transform 0.2s ease-in-out;
+  padding: 20px;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.experience-card ul {
+  padding-left: 1.25rem;
+  margin-top: 10px;
+}
+
+.experience-card li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.company-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 8px;
+}

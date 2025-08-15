@@ -1,0 +1,83 @@
+/* App.css — GLOBAL STYLES ONLY */
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  color: #333;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+  color: #2b2b2b;
+}
+
+a {
+  text-decoration: none;
+}
+
+button, .btn {
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #6c63ff !important;
+  border: none;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background: #5a52e8 !important;
+  transform: scale(1.05);
+}
+
+/* Reusable animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section {
+  animation: fadeInUp 1s ease forwards;
+  background: linear-gradient(120deg, #f6f8ff, #e3e8ff);
+  color: #333;
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+  min-height: 100vh;
+}
+
+.section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.section li {
+  margin-bottom: 8px;
+}
+
+.active {
+  font-weight: bold;
+  border-bottom: 2px solid #6c63ff;
+}
+
+.nav-link.active {
+  color: #6c63ff !important;
+  /* font-weight: bold; */
+  background-color: rgba(108, 99, 255, 0.1); /* soft highlight */
+  padding: 6px 12px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+

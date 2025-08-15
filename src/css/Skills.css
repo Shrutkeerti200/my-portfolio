@@ -1,0 +1,17 @@
+.skill-card {
+  border-radius: 12px;
+  background-color: white;
+  /* transition: transform 0.2s ease-in-out;  */
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #eee;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(108, 99, 255, 0.1);
+}
+
+.skill-icon {
+  font-size: 1.2rem;
+  color: #6c63ff;
+}
