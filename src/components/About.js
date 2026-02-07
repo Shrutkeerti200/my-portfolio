@@ -23,7 +23,7 @@ function About() {
                         </div>
                     </Col>
                     <Col md={5} className="text-center mt-4 mt-md-0">
-                        <img src="/assets/image1.jpeg" alt="Profile" className="img-fluid rounded-circle shadow" style={{ maxWidth: '450px' }} />
+                        <img src="/assets/image1.jpeg" alt="Profile" className="img-fluid shadow profile-img" style={{ maxWidth: '450px' }} />
                     </Col>
                 </Row>
             </Container>
