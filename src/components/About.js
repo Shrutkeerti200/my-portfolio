@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import '../css/About.css'; 
 
 function About() {
     return (
@@ -23,7 +24,7 @@ function About() {
                         </div>
                     </Col>
                     <Col md={5} className="text-center mt-4 mt-md-0">
-                        <img src="/assets/image1.jpeg" alt="Profile" className="img-fluid shadow profile-img" style={{ maxWidth: '450px' }} />
+                        <img src="/assets/image1.jpeg" alt="Profile" className="img-fluid shadow profile-img" />
                     </Col>
                 </Row>
             </Container>
