@@ -10,7 +10,7 @@ function About() {
                     <Col md={7}>
                         <div className="p-4 bg-light rounded shadow-sm">
                             <p>
-                                I am a passionate and detail-oriented software engineer with 1.5 years of experience in full-stack development. I specialize in building scalable, enterprise-grade web applications using Java, Spring Boot, ReactJS, SQL, and NoSQL databases, combining backend optimization with responsive, user-friendly interfaces. Alongside application development, I am actively exploring cloud computing and infrastructure/network engineering to build reliable and scalable systems.
+                                I am a passionate and detail-oriented software engineer with 1.5 years of experience in full-stack development. I specialize in building scalable, enterprise-grade web applications using Java, Spring Boot, ReactJS, SQL, and NoSQL databases, combining backend optimization with responsive, user-friendly interfaces. Alongside application development, I am actively exploring Cloud & DevOps Engineering to build reliable and scalable systems.
                             </p>
                             <br />
                             <p>
@@ -23,7 +23,7 @@ function About() {
                         </div>
                     </Col>
                     <Col md={5} className="text-center mt-4 mt-md-0">
-                        <img src="/assets/image1.jpeg" alt="Profile" className="img-fluid rounded-circle shadow" style={{ maxWidth: '250px' }} />
+                        <img src="/assets/image1.jpeg" alt="Profile" className="img-fluid rounded-circle shadow" style={{ maxWidth: '450px' }} />
                     </Col>
                 </Row>
             </Container>
