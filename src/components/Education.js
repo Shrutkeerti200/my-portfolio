@@ -35,7 +35,7 @@ function Education() {
                   <span className="tag">Agile Software Development and Methodologies</span>
                   <span className="tag">Web Development Tools and Methods</span>
                   <span className="tag">Managing Operational Risk Engineering</span>
-                  <span className="tag">Business Analysis and Information Engineering</span>
+                  <span className="tag">Linux for Network Engineers</span>
                 </div>
               </Card.Body>
             </Card>
