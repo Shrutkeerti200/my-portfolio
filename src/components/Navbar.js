@@ -5,7 +5,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 
 function MyNavbar() {
   return (
-    <Navbar expand="lg" fixed="top" bg="white" className="shadow-sm">
+    <Navbar expand="lg" fixed="top" className="dark-navbar">
       <Container>
         <Navbar.Brand className="fw-bold">SHRUTKEERTI</Navbar.Brand>
         <Navbar.Toggle />

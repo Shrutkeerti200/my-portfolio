@@ -1,46 +1,164 @@
+/* Projects.css — Dark Theme */
+
+.slider-wrapper {
+  position: relative;
+  padding: 0 64px;
+}
+
+.slider-card-wrapper {
+  animation: slideIn 0.4s ease;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 300px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(228, 228, 231, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  z-index: 10;
+}
+
+.slider-arrow-left { left: 0; }
+.slider-arrow-right { right: 0; }
+
+.slider-arrow:hover {
+  background: #f97316;
+  color: #fff;
+  border-color: #f97316;
+  transform: scale(1.08);
+  box-shadow: 0 4px 16px rgba(249, 115, 22, 0.3);
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(228, 228, 231, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.slider-dot.active {
+  background: #f97316;
+  transform: scale(1.3);
+}
+
+.slider-dot:hover {
+  background: rgba(228, 228, 231, 0.4);
+}
+
 .project-card {
-  border-radius: 12px;
-  background-color: #ffffff;
-  transition: all 0.3s ease-in-out;
-  border: 1px solid #eee;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 16px;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  background: rgba(255, 255, 255, 0.03) !important;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(108, 99, 255, 0.1);
+  box-shadow: 0 12px 40px rgba(249, 115, 22, 0.1);
+  border-color: rgba(249, 115, 22, 0.3) !important;
+}
+
+.featured-project {
+  border: 2px solid rgba(249, 115, 22, 0.2) !important;
+  background: rgba(249, 115, 22, 0.03) !important;
+}
+
+.featured-project:hover {
+  border-color: #f97316 !important;
+  box-shadow: 0 16px 48px rgba(249, 115, 22, 0.15);
+}
+
+.featured-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: rgba(249, 115, 22, 0.1);
+  color: #f97316;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.project-header .github-icon {
+  font-size: 1.6rem;
+  color: #f97316;
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin-top: 4px;
+}
+
+.project-header .github-icon:hover {
+  color: #22d3ee;
+  transform: scale(1.15);
 }
 
 .tech-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
+  gap: 8px;
 }
 
 .tag {
-  background-color: #f0eefe;
-  color: #6c63ff;
-  padding: 6px 14px;
+  background: rgba(34, 211, 238, 0.08);
+  color: #22d3ee;
+  padding: 4px 14px;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   font-weight: 500;
-  white-space: nowrap;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: 1px solid rgba(34, 211, 238, 0.15);
+  transition: all 0.2s ease;
 }
 
 .tag:hover {
-  background-color: #e3dfff;
-  transform: scale(1.05);
+  background: rgba(34, 211, 238, 0.15);
+  border-color: rgba(34, 211, 238, 0.3);
 }
 
-.github-icon {
-  color: #6c63ff;
-  font-size: 1.4rem;
-  transition: transform 0.2s ease, color 0.3s ease;
-  display: inline-block;
+.project-card ul { padding-left: 1.2rem; }
+
+.project-card li {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: rgba(228, 228, 231, 0.6);
+  margin-bottom: 6px;
 }
 
-.github-icon:hover {
-  transform: scale(1.2);
-  color: #5146d8;
+@media (max-width: 768px) {
+  .slider-wrapper { padding: 0 44px; }
+  .slider-arrow { width: 36px; height: 36px; font-size: 0.85rem; }
+  .project-header { flex-direction: column; gap: 8px; }
 }

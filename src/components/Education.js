@@ -21,7 +21,7 @@ function Education() {
                 </Card.Subtitle>
                 <div className="d-flex align-items-center text-muted mb-2">
                   <FaCalendarAlt className="me-2" />
-                  Expected Dec 2026
+                  May 2026
                   <span className="mx-3">|</span>
                   <FaMapMarkerAlt className="me-2" />
                   Boston, MA, USA
@@ -52,7 +52,7 @@ function Education() {
                 </Card.Subtitle>
                 <div className="d-flex align-items-center text-muted mb-2">
                   <FaCalendarAlt className="me-2" />
-                  Graduated Apr 2022
+                  Apr 2022
                   <span className="mx-3">|</span>
                   <FaMapMarkerAlt className="me-2" />
                   Pune, India
@@ -74,6 +74,7 @@ function Education() {
         </Row>
       </Container>
     </section>
+    
   );
 }
 

@@ -7,12 +7,7 @@ function ScrollToTopButton() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const footer = document.getElementById('footer');
-      if (!footer) return;
-
-      const footerTop = footer.getBoundingClientRect().top;
-      const windowHeight = window.innerHeight;
-      setIsVisible(footerTop < windowHeight);
+      setIsVisible(window.scrollY > 300);
     };
 
     window.addEventListener('scroll', handleScroll);

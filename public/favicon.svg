@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#0a0a0e"/>
+  <text x="8" y="44" font-family="Courier New, monospace" font-weight="700" font-size="24" fill="#22d3ee">{</text>
+  <text x="19" y="44" font-family="Arial Black, sans-serif" font-weight="900" font-size="24" fill="#f97316">SS</text>
+  <text x="47" y="44" font-family="Courier New, monospace" font-weight="700" font-size="24" fill="#22d3ee">}</text>
+</svg>

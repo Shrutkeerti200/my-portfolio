@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Button } from 'react-bootstrap';
 import { FaChevronDown } from 'react-icons/fa';
-import '../css/Home.css'; // Make sure you have this file
+import '../css/Home.css';
 
 function Home() {
   const scrollToNextSection = () => {
@@ -12,21 +12,41 @@ function Home() {
   };
 
   return (
-    <section id="home" className="section bg-light">
-      <Container className="text-center py-5">
-        <h1><b>Shrutkeerti Sangolkar</b> 👋</h1>
+    <section id="home" className="section home-section">
+      <Container className="text-center py-5 hero-container">
+
+        <div className="status-badge mb-3">
+          <span className="status-dot"></span>
+          <span>Open to Opportunities</span>
+        </div>
+
+        <p className="hero-tagline">JAVA FULL STACK · MICROSERVICES · REACTJS · CLOUD</p>
+
+        <h1 className="hero-name">
+          Hi, I'm Shrutkeerti <span className="wave">👋</span>
+        </h1>
+
         <p className="hero-description">
-          Master's student at Northeastern University with a background in Full Stack Development, currently exploring opportunities in DevOps and Cloud infrastructure to build scalable, user-centric applications.
+          Master's graduate from Northeastern University with a background in Full Stack
+          Development, currently exploring opportunities in DevOps and Cloud infrastructure to
+          build scalable, user-centric applications.
         </p>
 
-        <Button
-          variant="primary"
-          href="/Shrutkeerti_Resume.pdf"
-          download
-          className="mt-3 download-btn"
-        >
-          Download CV
-        </Button>
+        <div className="hero-buttons mt-4">
+          <Button
+            href="/Shrutkeerti_Sangolkar_Resume.pdf"
+            download
+            className="download-btn me-3"
+          >
+            Download CV
+          </Button>
+          <Button
+            href="#projects"
+            className="projects-btn"
+          >
+            View Projects
+          </Button>
+        </div>
 
         {/* Scroll Down Arrow */}
         <div className="scroll-down" onClick={scrollToNextSection}>

@@ -1,3 +1,5 @@
+/* Certifications.css — Dark Theme */
+
 .carousel-wrapper {
   position: relative;
   display: flex;
@@ -12,17 +14,17 @@
   scroll-behavior: smooth;
   padding: 10px 0;
   scroll-snap-type: x mandatory;
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
 }
 
 .carousel::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;
 }
 
 .cert-card {
   border-radius: 12px;
-  background-color: #ffffff;
-  border: 1px solid #eee;
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
   min-width: 300px;
   max-width: 300px;
   flex: 0 0 auto;
@@ -32,18 +34,31 @@
 
 .cert-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(108, 99, 255, 0.1);
+  box-shadow: 0 12px 24px rgba(249, 115, 22, 0.1);
+  border-color: rgba(249, 115, 22, 0.3) !important;
+}
+
+.cert-card .card-title {
+  color: #e4e4e7 !important;
+}
+
+.cert-card .card-subtitle {
+  color: rgba(228, 228, 231, 0.5) !important;
+}
+
+.cert-card .text-muted {
+  color: rgba(228, 228, 231, 0.4) !important;
 }
 
 .cert-link {
-  color: #6c63ff;
+  color: #f97316;
   font-weight: 500;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .cert-link:hover {
-  color: #5146d8;
+  color: #22d3ee;
   text-decoration: underline;
 }
 
@@ -60,21 +75,24 @@
   transform: translateY(-50%);
   z-index: 2;
   font-size: 1.2rem;
-  color: #333;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: none;
+  color: rgba(228, 228, 231, 0.6);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   width: 36px;
   height: 36px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .carousel-btn:hover {
-  background-color: #f0f0f0;
+  background-color: #f97316;
+  color: #fff;
+  border-color: #f97316;
+  box-shadow: 0 4px 16px rgba(249, 115, 22, 0.3);
 }
 
 .carousel-btn.left {
@@ -85,7 +103,7 @@
   right: 0;
 }
 
-/* Optional: Gradient fade edges */
+/* Gradient fade edges — dark version */
 .carousel-wrapper::before,
 .carousel-wrapper::after {
   content: '';
@@ -99,10 +117,10 @@
 
 .carousel-wrapper::before {
   left: 0;
-  background: linear-gradient(to right, #f8f9fc, transparent);
+  background: linear-gradient(to right, #0a0a0e, transparent);
 }
 
 .carousel-wrapper::after {
   right: 0;
-  background: linear-gradient(to left, #f8f9fc, transparent);
+  background: linear-gradient(to left, #0a0a0e, transparent);
 }

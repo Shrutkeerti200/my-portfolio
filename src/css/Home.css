@@ -1,74 +1,158 @@
-.scroll-down {
-  cursor: pointer;
+/* Home.css — Dark Theme */
+
+.home-section {
+  background: radial-gradient(ellipse at 20% 50%, rgba(249, 115, 22, 0.06) 0%, transparent 50%),
+              radial-gradient(ellipse at 80% 20%, rgba(34, 211, 238, 0.04) 0%, transparent 50%),
+              #0a0a0e !important;
+}
+
+.hero-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  justify-content: center;
+  min-height: 85vh;
+  position: relative;
 }
 
-.scroll-text {
-  font-size: 16px;
-  font-weight: 500;
-  color: #6c63ff;
-  text-shadow: 0 0 8px rgba(108, 99, 255, 0.5);
+.hero-tagline {
+  font-size: 0.78rem;
   font-weight: 600;
-  animation: bounceText 2s infinite, fadeInOut 2s infinite;
+  letter-spacing: 4px;
+  color: rgba(228, 228, 231, 0.4);
+  margin-bottom: 24px;
 }
 
-.bounce-arrow {
-  font-size: 24px;
-  color: #333;
-  animation: bounceArrow 2s infinite;
+.hero-name {
+  font-size: clamp(2.8rem, 7vw, 4.5rem);
+  font-weight: 800;
+  color: #e4e4e7;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -1.5px;
 }
 
 .hero-description {
-  font-size: 1.2rem;
-  font-family: 'Poppins', sans-serif;
-  padding: 0 18%;
-  line-height: 1.8;
-  color: #444;
+  font-size: 1.1rem;
+  color: rgba(228, 228, 231, 0.5);
+  max-width: 620px;
+  margin: 0 auto 10px;
+  line-height: 1.75;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .download-btn {
-  background-color: #6c63ff !important;
-  border: none;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  background: linear-gradient(135deg, #f97316, #ea580c) !important;
+  border: none !important;
+  color: #fff !important;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(249, 115, 22, 0.3);
 }
 
 .download-btn:hover {
-  background-color: #574fe1 !important;
-  transform: scale(1.05);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(249, 115, 22, 0.4);
 }
 
-@keyframes bounceText {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(6px);
-  }
+.projects-btn {
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 2px solid rgba(255, 255, 255, 0.15) !important;
+  color: #e4e4e7 !important;
+  background: transparent !important;
+  transition: all 0.3s ease;
 }
 
-@keyframes bounceArrow {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-}
-
-@keyframes fadeInOut {
-  0%, 100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
+.projects-btn:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+  transform: translateY(-2px);
 }
 
 .scroll-down {
-  background: linear-gradient(120deg, #f6f8ff, #e3e8ff); 
-  padding: 1rem 0;
+  margin-top: 3.5rem;
+  cursor: pointer;
 }
 
+.scroll-text {
+  color: rgba(228, 228, 231, 0.3);
+  font-size: 0.82rem;
+  margin-bottom: 4px;
+}
 
+.bounce-arrow {
+  color: rgba(228, 228, 231, 0.3);
+  font-size: 1.2rem;
+  animation: bounce 2s infinite;
+}
+
+/* Hand wave animation */
+.wave {
+  display: inline-block;
+  animation: wave-hand 2.5s infinite;
+  transform-origin: 70% 70%;
+  font-size: 0.8em;
+}
+
+@keyframes wave-hand {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-8px); }
+  60% { transform: translateY(-4px); }
+}
+
+/* Status badge */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 18px;
+  border-radius: 100px;
+  background: rgba(249, 115, 22, 0.08);
+  border: 1px solid rgba(249, 115, 22, 0.2);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #f97316;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22d3ee;
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.4); }
+}
+
+@media (max-width: 768px) {
+  .hero-name { font-size: 2.4rem; letter-spacing: -1px; }
+  .hero-description { font-size: 1rem; max-width: 100%; }
+}
