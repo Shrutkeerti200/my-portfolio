@@ -20,7 +20,7 @@ function Home() {
           <span>Open to Opportunities</span>
         </div>
 
-        <p className="hero-tagline">JAVA FULL STACK · MICROSERVICES · REACTJS · CLOUD</p>
+        <p className="hero-tagline">JAVA FULL STACK · MICROSERVICES · REACTJS · CLOUD · AI INTEGRATION</p>
 
         <h1 className="hero-name">
           Hi, I'm Shrutkeerti <span className="wave">👋</span>
@@ -28,8 +28,7 @@ function Home() {
 
         <p className="hero-description">
           Master's graduate from Northeastern University with a background in Full Stack
-          Development, currently exploring opportunities in DevOps and Cloud infrastructure to
-          build scalable, user-centric applications.
+          Development, currently exploring opportunities in Java Full Stack, Cloud Infrastructure, and AI-integrated systems to build scalable, intelligent applications.
         </p>
 
         <div className="hero-buttons mt-4">
