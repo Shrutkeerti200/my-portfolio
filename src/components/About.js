@@ -17,13 +17,13 @@ function About() {
                             </div>
                             <div className="terminal-body">
                                 <p>
-                                    <span className="terminal-prompt">$</span> I'm a Full Stack Developer with 1.5 years of experience at Capgemini, where I built scalable web applications using Java, Spring Boot, React, and microservices. I enjoy turning complex business problems into clean, reliable software — from designing RESTful APIs to building real-time dashboards.
+                                    <span className="terminal-prompt">$</span> I'm a Full Stack Developer with 1.5 years of experience at Capgemini, where I built scalable web applications using Java, Spring Boot, React, and microservices. I enjoy turning complex business problems into clean, reliable software — from designing RESTful APIs and real-time data pipelines to integrating AI-powered features into production systems.
                                 </p>
                                 <p>
-                                    I recently graduated with a Master's in Information Systems from Northeastern University, where I deepened my skills in distributed systems, cloud infrastructure, and event-driven architecture. I work across the full stack with tools like Docker, Kafka, Redis, AWS, and Terraform.
+                                    I recently graduated with a Master's in Information Systems from Northeastern University, where I deepened my skills in distributed systems, cloud infrastructure, event-driven architecture, and AI integration. I work across the full stack with tools like Docker, Kafka, Redis, AWS, Terraform, and Groq/Llama for intelligent application features.
                                 </p>
                                 <p>
-                                    I'm particularly drawn to the financial services and healthcare industries — domains where software quality, data integrity, and scalability directly impact people's lives. I'm looking for opportunities where I can build systems that matter.
+                                    I'm particularly drawn to financial services, healthcare, and enterprise SaaS — domains where software quality, data integrity, and scalability directly impact people's lives. I'm currently open to opportunities where I can build intelligent systems that matter.
                                 </p>
                             </div>
                         </div>
